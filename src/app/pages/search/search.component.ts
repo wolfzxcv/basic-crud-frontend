@@ -15,5 +15,6 @@ export class SearchComponent implements OnInit {
   findByUsername() {
     let res = this.service.getByUserName(this.username);
     res.subscribe((data) => (this.user = data));
+    this.username = '';
   }
 }

@@ -1,0 +1,13 @@
+.user-hover {
+  &:hover {
+    background: #000;
+    color: white;
+  }
+
+  .delete-hover {
+    &:hover {
+      cursor: pointer;
+      color: red;
+    }
+  }
+}

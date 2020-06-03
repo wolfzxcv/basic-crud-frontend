@@ -18,5 +18,6 @@ export class RegisterComponent implements OnInit {
   handleRegister() {
     let res = this.service.doRegister(this.user);
     res.subscribe((data) => (this.message = data));
+    this.user = new User('', '', 0, '', '', '');
   }
 }
